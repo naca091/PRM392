@@ -1,9 +1,1 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-- Do not change old IDs related to functions of Views in the layout when updating XML layouts
-- The new layout interface is easy to see, easy to use, user-friendly, has cool color tones when used, diverse layout colors and creates marketing sympathy for users.
-- Ensure that the overall UI of the application is in sync
-- Refer to UI lay out of Tiki application
+
