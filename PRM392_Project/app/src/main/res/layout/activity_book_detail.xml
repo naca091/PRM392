@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Image Gallery -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewBook1"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"
+                        tools:src="@tools:sample/backgrounds/scenic" />
+
+                    <ImageView
+                        android:id="@+id/imageViewBook2"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"
+                        tools:src="@tools:sample/backgrounds/scenic" />
+
+                    <ImageView
+                        android:id="@+id/imageViewBook3"
+                        android:layout_width="200dp"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"
+                        tools:src="@tools:sample/backgrounds/scenic" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textViewBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewBookCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewBookPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewBookStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/buttonDecreaseQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textViewQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/buttonIncreaseQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"/>
+
+            <LinearLayout
+                android:id="@+id/layoutAdminButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/buttonEditBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Book"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/buttonDeleteBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Book"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 

@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+tạo cho tôi 1 dự án bookstore đơn giản, bao gồm user và admin. admin quản lí user, category của book, book, order, cập nhật status của order. User tìm kiếm sách và mua sách, xem lịch sử các order bao gồm sách đã mua, sử dụng sqlite làm db. Code đơn giản dễ hiểu, code đầy đủ UI và function, đừng code chia ra các class quá phức tạp.
+- đừng phức tạp dự án, hãy tạo cho tôi activity crud và kèm theo đó là các UI để dễ dàng quản lý, chia ra thành các file như AddActivity, EditAcitivy
+- tôi chỉ đang cần chỉnh sửa UI, đừng xóa các function có sẵn giúp tôi, điều này sẽ gây conflict code 
